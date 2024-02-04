@@ -43,6 +43,11 @@
     color: aliceblue;
 }
 
+.redes-sociales {
+    width: 50px;
+    height: auto;
+}
+
 /* Pantallas muy pequeñas (teléfonos móviles en modo vertical) */
 @media only screen and (max-width: 320px) {
 
