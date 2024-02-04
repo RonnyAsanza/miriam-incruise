@@ -1,0 +1,45 @@
+<div id="bg-navbar"></div>
+<div id="bg-navbar-img"></div>
+<div class="card" id="divNavbarId">
+  <p-menubar [model]="items"></p-menubar>
+</div>
+
+<div class="text-color-navbar text-font">
+  <div class="text-title">
+    <p class="m-1">INCRUISE</p>
+    <p class="m-1 text-title-second">CRUCEROS TEMÁTICOS</p>
+  </div>
+
+  <div class="text-center font-bold m-6">
+    <p class="mb-0 text-lg sm:text-xl md:text-1xl lg:text-2xl">
+      PROMOTORA OFICIAL:
+    </p>
+    <p class="m-0 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+      {{ nombrePromotora }}
+    </p>
+  </div>
+</div>
+
+<div class="flex flex-row flex-wrap justify-content-center">
+  <div
+    class="flex align-items-center justify-content-center w-4rem h-4rem bg-primary font-bold border-round m-2"
+  >
+    1
+  </div>
+  <div
+    class="flex align-items-center justify-content-center w-4rem h-4rem bg-primary font-bold border-round m-2"
+  >
+    2
+  </div>
+  <div
+    class="flex align-items-center justify-content-center w-4rem h-4rem bg-primary font-bold border-round m-2"
+  >
+    3
+  </div>
+</div>
+
+<p-dropdown>
+    <ng-template pTemplate="dropdownicon">
+        <i class="fa-light fa-chevron-down"></i>
+    </ng-template>
+</p-dropdown

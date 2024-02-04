@@ -1,0 +1,87 @@
+#bg-navbar-img {
+    background-image: url('./../../assets/themecruise.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+#bg-navbar {
+    background-color: #1e73be;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.text-font {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.text-title {
+    line-height: 1;
+    margin: 0;
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.text-title-second {
+    font-size: 14px;
+}
+
+.text-color-navbar {
+    color: aliceblue;
+}
+
+/* Pantallas muy pequeñas (teléfonos móviles en modo vertical) */
+@media only screen and (max-width: 320px) {
+
+    /* Estilos para pantallas muy pequeñas */
+    .text-title {
+        font-size: 35px;
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+}
+
+/* Teléfonos móviles en modo horizontal y teléfonos de baja resolución */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+
+    /* Estilos para teléfonos móviles en modo horizontal */
+    .text-title {
+        font-size: 30px;
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+
+    .text-title-second {
+        font-size: 14px;
+    }
+
+}
+
+/* Tabletas en modo vertical y pantallas pequeñas */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para tabletas en modo vertical */
+
+}
+
+/* Tabletas en modo horizontal y computadoras de escritorio pequeñas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tabletas en modo horizontal */
+}
+
+/* Pantallas más grandes como desktops */
+@media only screen and (min-width: 1025px) {
+    /* Estilos para pantallas grandes */
+}
