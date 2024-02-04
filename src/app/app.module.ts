@@ -4,16 +4,34 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenubarModule } from 'primeng/menubar';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { PreguntasComponent } from './preguntas/preguntas.component';
+import { ButtonModule } from 'primeng/button';
+import { AccordionModule } from 'primeng/accordion';
+import { FooterComponent } from './footer/footer.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { GalleriaModule } from 'primeng/galleria';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    NosotrosComponent,
+    PreguntasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MenubarModule
+    MenubarModule,
+    ButtonModule,
+    AccordionModule,
+    InputTextModule,
+    InputTextareaModule,
+    GalleriaModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

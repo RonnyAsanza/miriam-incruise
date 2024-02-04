@@ -13,18 +13,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'NOSOTROS',
-        icon: 'pi pi-fw pi-user',
-      },
-      {
-        label: 'CRUCEROS',
-        icon: 'pi pi-directions',
-      },
-      {
-        label: 'COLABORAN',
-        icon: 'pi pi-desktop',
-      },
-      {
         label: 'EXPERIENCIAS',
         icon: 'pi pi-camera',
       },
