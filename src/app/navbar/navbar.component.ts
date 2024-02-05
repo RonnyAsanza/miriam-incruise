@@ -22,6 +22,9 @@ export class NavbarComponent implements OnInit {
       {
         label: 'CONTACTO',
         icon: 'pi pi-phone',
+        command: () => {
+          window.open(this.enlaceWhatsApp, '_blank');
+        }
       }
     ];
   }
