@@ -12,7 +12,6 @@ export class FooterComponent implements OnInit {
   telefono: string = "";
   email: string = "";
   comentario: string = "";
-
   loading: boolean = false;
   images: any[] = [];
   responsiveOptions: any[] = [

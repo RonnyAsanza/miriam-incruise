@@ -25,6 +25,7 @@
             pInputText
             pKeyFilter="int"
             placeholder="Nombres"
+            class="w-full"
             [(ngModel)]="nombres"
           />
         </div>
@@ -35,6 +36,7 @@
             pInputText
             pKeyFilter="int"
             placeholder="Appellidos"
+            class="w-full"
             [(ngModel)]="apellidos"
           />
         </div>
@@ -45,6 +47,7 @@
             pInputText
             pKeyFilter="int"
             placeholder="Email"
+            class="w-full"
             [(ngModel)]="email"
           />
         </div>
@@ -55,6 +58,7 @@
             pInputText
             pKeyFilter="int"
             placeholder="Teléfono"
+            class="w-full"
             [(ngModel)]="telefono"
           />
         </div>
@@ -91,27 +95,20 @@
     </div>
   </div>
   <div class="col-12 md:col-7">
-    <div class="grid ml-1 md:ml-8">
+    <div class="grid ml-1">
       <div class="col-12">
         <div class="card">
           <p-galleria
             [value]="images"
             [responsiveOptions]="responsiveOptions"
-            [containerStyle]="{ 'max-width': '640px' }"
             [numVisible]="5"
           >
             <ng-template pTemplate="item" let-item>
-              <img
-                [src]="item.itemImageSrc"
-                style="width: 100%; max-height: 300px"
-              />
+              <img [src]="item.itemImageSrc" class="imgGalleriFirst" />
             </ng-template>
             <ng-template pTemplate="thumbnail" let-item>
               <div class="grid grid-nogutter justify-content-center">
-                <img
-                  [src]="item.thumbnailImageSrc"
-                  style="margin-left: 5px; margin-right: 5px"
-                />
+                <img [src]="item.thumbnailImageSrc" class="imgGalleriSecond" />
               </div>
             </ng-template>
           </p-galleria>
