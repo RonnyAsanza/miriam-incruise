@@ -47,9 +47,9 @@ body {
     border-radius: 10px;
     border: 2px solid orange;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(170, 7, 192, 0.19);
-    width: 150px !important;
+    width: 375px !important;
     height: 325px !important;
-    max-width: 150px !important;
+    max-width: 375px !important;
     max-height: 325px !important;
     height: auto;
     width: auto;

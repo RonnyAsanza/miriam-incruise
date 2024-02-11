@@ -46,6 +46,12 @@ export class PhotoService {
                 title: "Title 7"
             },
             {
+                itemImageSrc: "./../../assets/elizabeth/foto8.jpg",
+                thumbnailImageSrc: "./../../assets/elizabeth/foto8.jpg",
+                alt: "Description for Image 3",
+                title: "Title 8"
+            },
+            {
                 itemImageSrc: "./../../assets/elizabeth/foto9.jpg",
                 thumbnailImageSrc: "./../../assets/elizabeth/foto9.jpg",
                 alt: "Description for Image 2",
@@ -58,34 +64,34 @@ export class PhotoService {
                 title: "Title 10"
             },
             {
-                itemImageSrc: "./../../assets/elizabeth/foto10.jpg",
-                thumbnailImageSrc: "./../../assets/elizabeth/foto10.jpg",
-                alt: "Description for Image 3",
-                title: "Title 10"
-            },
-            {
                 itemImageSrc: "./../../assets/elizabeth/foto11.jpg",
                 thumbnailImageSrc: "./../../assets/elizabeth/foto11.jpg",
                 alt: "Description for Image 3",
-                title: "Title 10"
+                title: "Title 11"
             },
             {
                 itemImageSrc: "./../../assets/elizabeth/foto12.jpg",
                 thumbnailImageSrc: "./../../assets/elizabeth/foto12.jpg",
                 alt: "Description for Image 3",
-                title: "Title 10"
+                title: "Title 12"
             },
             {
                 itemImageSrc: "./../../assets/elizabeth/foto13.jpg",
                 thumbnailImageSrc: "./../../assets/elizabeth/foto13.jpg",
                 alt: "Description for Image 3",
-                title: "Title 10"
+                title: "Title 13"
             },
             {
                 itemImageSrc: "./../../assets/elizabeth/foto14.jpg",
                 thumbnailImageSrc: "./../../assets/elizabeth/foto14.jpg",
                 alt: "Description for Image 3",
-                title: "Title 10"
+                title: "Title 14"
+            },
+            {
+                itemImageSrc: "./../../assets/elizabeth/foto15.jpg",
+                thumbnailImageSrc: "./../../assets/elizabeth/foto15.jpg",
+                alt: "Description for Image 3",
+                title: "Title 15"
             },
         ]);
     }
