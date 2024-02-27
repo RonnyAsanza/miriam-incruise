@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router) { }
 
   items: MenuItem[] = [];
-  nombrePromotora: string = "MIRIAM APELLIDO1 APELLIDO2";
+  nombrePromotora: string = "MIRIAM DURAN BATISTA";
   mensajeWhatsApp = encodeURIComponent('*Hola,* estoy interesado en obtener información totalmente personalizada gratis para viajar y trabajar en InCruises.');
   enlaceWhatsApp = `https://wa.me/+34693746959?text=${this.mensajeWhatsApp}`;
   enlaceInstagram = `https://www.instagram.com/`;
