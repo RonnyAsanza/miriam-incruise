@@ -18,6 +18,7 @@ import { ImageModule } from 'primeng/image';
 import { AppRoutingModule } from './app-routing.module';
 import { GaleriaAllComponent } from './galeria-all/galeria-all.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { MessagesModule } from 'primeng/messages';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { InicioComponent } from './inicio/inicio.component';
     GalleriaModule,
     FormsModule,
     ImageModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MessagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '../service/photoservice';
+import { Message } from 'primeng/api';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,8 @@ import { PhotoService } from '../service/photoservice';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  messages: Message[] = [];
+  messageSend: boolean = false;
   nombres: string = "";
   apellidos: string = "";
   telefono: string = "";
@@ -32,6 +35,7 @@ export class FooterComponent implements OnInit {
   constructor(private photoService: PhotoService) { }
 
   ngOnInit() {
+    this.messages = [{ severity: 'success', summary: 'Success', detail: 'Message Content' }];
     this.photoService.getImages().then((images) => (this.images = images));
     this.responsiveOptions =
       [
@@ -63,12 +67,24 @@ export class FooterComponent implements OnInit {
   }
 
   load() {
+    if (
+      this.nombres.trim() === '' ||
+      this.apellidos.trim() === '' ||
+      this.email.trim() === '' ||
+      this.telefono.trim() === ''
+    ) {
+      this.messages = [{ severity: 'error', summary: 'Error', detail: 'Debes introducir la información obligatoria (*)' }];
+      this.messageSend = true;
+      return;
+    }
+
     this.loading = true;
     this.sendMessage();
     setTimeout(() => {
       this.loading = false
-      alert("Mensaje enviado");
-    }, 2500);
+      this.messages = [{ severity: 'success', summary: 'Enviado', detail: 'Me pondré en contacto lo antes posible!' }];
+      this.messageSend = true;
+    }), 2500
   }
 
   sendMessage(): void {
@@ -85,7 +101,7 @@ export class FooterComponent implements OnInit {
     const mensajeCompleto = `${intro}\n\n${mensajePersonal}`;
 
     const mensajeWhatsApp = encodeURIComponent(mensajeCompleto);
-    const tuNumeroWhatsApp = '+34649926162'; 
+    const tuNumeroWhatsApp = '+34649926162';
     const urlWhatsApp = `https://wa.me/${tuNumeroWhatsApp}?text=${mensajeWhatsApp}`;
 
     window.open(urlWhatsApp, '_blank');

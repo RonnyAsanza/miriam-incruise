@@ -24,7 +24,7 @@
           <input
             pInputText
             pKeyFilter="int"
-            placeholder="Nombres"
+            placeholder="Nombres *"
             class="w-full"
             [(ngModel)]="nombres"
           />
@@ -35,7 +35,7 @@
           <input
             pInputText
             pKeyFilter="int"
-            placeholder="Appellidos"
+            placeholder="Appellidos *"
             class="w-full"
             [(ngModel)]="apellidos"
           />
@@ -46,7 +46,7 @@
           <input
             pInputText
             pKeyFilter="int"
-            placeholder="Email"
+            placeholder="Email *"
             class="w-full"
             [(ngModel)]="email"
           />
@@ -57,7 +57,7 @@
           <input
             pInputText
             pKeyFilter="int"
-            placeholder="Teléfono"
+            placeholder="Teléfono *"
             class="w-full"
             [(ngModel)]="telefono"
           />
@@ -95,6 +95,9 @@
     </div>
   </div>
   <div class="col-12 md:col-7">
+    <div class="card">
+      <p-messages *ngIf="messageSend" [(value)]="messages" [enableService]="false" [closable]="true"></p-messages>
+    </div>
     <div class="grid ml-1">
       <div class="col-12">
         <div class="card">
