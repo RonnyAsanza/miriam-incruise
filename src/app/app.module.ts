@@ -15,6 +15,9 @@ import { GalleriaModule } from 'primeng/galleria';
 import { FormsModule } from '@angular/forms';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { ImageModule } from 'primeng/image';
+import { AppRoutingModule } from './app-routing.module';
+import { GaleriaAllComponent } from './galeria-all/galeria-all.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { ImageModule } from 'primeng/image';
     NosotrosComponent,
     PreguntasComponent,
     FooterComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    GaleriaAllComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,8 @@ import { ImageModule } from 'primeng/image';
     InputTextareaModule,
     GalleriaModule,
     FormsModule,
-    ImageModule
+    ImageModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

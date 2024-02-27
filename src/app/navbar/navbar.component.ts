@@ -26,6 +26,10 @@ export class NavbarComponent implements OnInit {
         }
       },
       {
+        label: 'GALERÍA',
+        icon: 'pi pi-image',
+      },
+      {
         label: 'CONTACTO',
         icon: 'pi pi-phone',
         command: () => {
