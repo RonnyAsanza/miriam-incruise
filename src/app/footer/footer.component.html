@@ -96,7 +96,12 @@
   </div>
   <div class="col-12 md:col-7">
     <div class="card">
-      <p-messages *ngIf="messageSend" [(value)]="messages" [enableService]="false" [closable]="true"></p-messages>
+      <p-messages
+        *ngIf="messageSend"
+        [(value)]="messages"
+        [enableService]="false"
+        [closable]="true"
+      ></p-messages>
     </div>
     <div class="grid ml-1">
       <div class="col-12">
@@ -118,6 +123,8 @@
         </div>
       </div>
     </div>
+    
+    <p>Copyright © 2024 Todos los derechos reservados.</p>
   </div>
 </div>
 
