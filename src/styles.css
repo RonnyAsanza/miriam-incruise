@@ -60,10 +60,10 @@ body {
     border-radius: 10px;
     border: 2px solid orange;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(170, 7, 192, 0.19);
-    width: 330px !important;
-    height: 325px !important;
-    max-width: 330px !important;
-    max-height: 325px !important;
+    width: 400px !important;
+    height: 350px !important;
+    max-width: 400px !important;
+    max-height: 350px !important;
 }
 
 .imgGalleriSecond {

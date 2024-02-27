@@ -40,6 +40,7 @@ export class NavbarComponent implements OnInit {
       {
         label: 'GALERÍA',
         icon: 'pi pi-image',
+        disabled: true,
         command: () => {
           this.router.navigate(['/galeria']);
         }

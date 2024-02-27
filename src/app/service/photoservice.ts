@@ -10,12 +10,6 @@ export class PhotoService {
     getImages(): Promise<any[]> {
         return Promise.resolve([
             {
-                itemImageSrc: "./../../assets/elizabeth/foto1.jpg",
-                thumbnailImageSrc: "./../../assets/elizabeth/foto1.jpg",
-                alt: "Description for Image 1",
-                title: "Title 1"
-            },
-            {
                 itemImageSrc: "./../../assets/elizabeth/foto2.jpg",
                 thumbnailImageSrc: "./../../assets/elizabeth/foto3.jpg",
                 alt: "Description for Image 2",
@@ -92,6 +86,12 @@ export class PhotoService {
                 thumbnailImageSrc: "./../../assets/elizabeth/foto15.jpg",
                 alt: "Description for Image 3",
                 title: "Title 15"
+            },
+            {
+                itemImageSrc: "./../../assets/elizabeth/foto1.jpg",
+                thumbnailImageSrc: "./../../assets/elizabeth/foto1.jpg",
+                alt: "Description for Image 1",
+                title: "Title 1"
             },
         ]);
     }

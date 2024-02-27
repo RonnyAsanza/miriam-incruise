@@ -33,6 +33,7 @@ export class GaleriaComponent {
   }
 
   irAGaleria() {
+    return;
     this.router.navigateByUrl('/galeria');
   }
 }
