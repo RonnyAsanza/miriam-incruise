@@ -33,8 +33,6 @@ export class GaleriaComponent {
   }
 
   irAGaleria() {
-    this.router.navigateByUrl('/galeria').then(() => {
-      window.scrollTo({ top: 350, left: 0, behavior: 'smooth' });
-    });
+    this.router.navigateByUrl('/galeria');
   }
 }

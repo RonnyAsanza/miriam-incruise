@@ -16,6 +16,9 @@ export class NavbarComponent implements OnInit {
   enlaceWhatsApp = `https://wa.me/+34693746959?text=${this.mensajeWhatsApp}`;
   enlaceInstagram = `https://www.instagram.com/`;
   enlaceTiktok = `https://www.tiktok.com/`;
+  enlaceYoutube = `https://www.youtube.com/`;
+  enlaceFacebook = `https://www.facebook.com/`;
+
   ngOnInit() {
     this.items = [
       {

@@ -11,5 +11,6 @@ export class GaleriaAllComponent implements OnInit {
 
   ngOnInit() {
     this.menuEstilosService.seccionExperienciaNavbar('gray', 'default');
+    window.scrollTo({ top: 350, left: 0, behavior: 'smooth' });
   }
 }

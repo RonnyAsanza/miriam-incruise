@@ -43,9 +43,11 @@
 
 .redes-sociales {
     width: 50px;
-    height: auto;
+    height: 50px;
 }
-
+.redes-sociales.youtube {
+    width: 70px;
+}
 /* Pantallas muy pequeñas (teléfonos móviles en modo vertical) */
 @media only screen and (max-width: 320px) {
 
