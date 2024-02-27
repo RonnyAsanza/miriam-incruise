@@ -8,16 +8,22 @@ import { MenuItem } from 'primeng/api';
 })
 export class NavbarComponent implements OnInit {
   items: MenuItem[] = [];
-  nombrePromotora: string = "ELIZABETH ZAMBRANO BERMEO";
-  mensajeWhatsApp = encodeURIComponent('Hola, estoy interesado en obtener información totalmente personalizada y gratis para viajar y trabajar en InCruises.');
-  enlaceWhatsApp = `https://wa.me/+34649926162?text=${this.mensajeWhatsApp}`;
-  enlaceInstagram = `https://www.instagram.com/elzaberh_viaja_barato/`;
-  enlaceTiktok = `https://www.tiktok.com/@elizabehz`;
+  nombrePromotora: string = "MIRIAM APELLIDO1 APELLIDO2";
+  mensajeWhatsApp = encodeURIComponent('*Hola,* estoy interesado en obtener información totalmente personalizada gratis para viajar y trabajar en InCruises.');
+  enlaceWhatsApp = `https://wa.me/+34693746959?text=${this.mensajeWhatsApp}`;
+  enlaceInstagram = `https://www.instagram.com/`;
+  enlaceTiktok = `https://www.tiktok.com/`;
   ngOnInit() {
     this.items = [
       {
         label: 'EXPERIENCIAS',
         icon: 'pi pi-camera',
+        command: (event) => {
+          const section = document.getElementById('section-experience');
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
       },
       {
         label: 'CONTACTO',
