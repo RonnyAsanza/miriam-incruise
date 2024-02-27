@@ -76,6 +76,16 @@ body {
     max-height: 100px !important;
 }
 
+/* Aplica estilos solo al primer ítem del menú */
+#divNavbarId .p-menubar .p-menubar-root-list>li:first-child .p-menuitem-link .p-menuitem-text {
+    color: orange;
+    font-weight: bold;
+}
+
+#divNavbarId .p-menubar .p-menubar-root-list > li:nth-child(2) .p-menuitem-link .p-menuitem-text {
+    color: #495057;
+}
+
 /* Pequeño (sm) - para pantallas mayores a 576px */
 @media (min-width: 576px) {
     .imgSemi img {

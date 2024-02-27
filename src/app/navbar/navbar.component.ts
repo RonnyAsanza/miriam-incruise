@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,8 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  constructor(private router: Router) { }
+
   items: MenuItem[] = [];
   nombrePromotora: string = "MIRIAM APELLIDO1 APELLIDO2";
   mensajeWhatsApp = encodeURIComponent('*Hola,* estoy interesado en obtener información totalmente personalizada gratis para viajar y trabajar en InCruises.');
@@ -15,6 +18,12 @@ export class NavbarComponent implements OnInit {
   enlaceTiktok = `https://www.tiktok.com/`;
   ngOnInit() {
     this.items = [
+      {
+        label: 'INICIO',
+        command: () => {
+          this.router.navigate(['/inicio']);
+        }
+      },
       {
         label: 'EXPERIENCIAS',
         icon: 'pi pi-camera',
@@ -28,6 +37,9 @@ export class NavbarComponent implements OnInit {
       {
         label: 'GALERÍA',
         icon: 'pi pi-image',
+        command: () => {
+          this.router.navigate(['/galeria']);
+        }
       },
       {
         label: 'CONTACTO',
@@ -38,5 +50,4 @@ export class NavbarComponent implements OnInit {
       }
     ];
   }
-
 }
