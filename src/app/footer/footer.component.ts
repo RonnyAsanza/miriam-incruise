@@ -10,6 +10,7 @@ import { Message } from 'primeng/api';
 export class FooterComponent implements OnInit {
   messages: Message[] = [];
   messageSend: boolean = false;
+  currentYear = new Date().getFullYear();
   nombres: string = "";
   apellidos: string = "";
   telefono: string = "";
