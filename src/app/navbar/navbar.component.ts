@@ -14,10 +14,10 @@ export class NavbarComponent implements OnInit {
   nombrePromotora: string = "MIRIAM DURAN BATISTA";
   mensajeWhatsApp = encodeURIComponent('*Hola,* estoy interesado en obtener información totalmente personalizada gratis para viajar y trabajar en InCruises.');
   enlaceWhatsApp = `https://wa.me/+34693746959?text=${this.mensajeWhatsApp}`;
-  enlaceInstagram = `https://www.instagram.com/`;
-  enlaceTiktok = `https://www.tiktok.com/`;
-  enlaceYoutube = `https://www.youtube.com/`;
-  enlaceFacebook = `https://www.facebook.com/`;
+  enlaceInstagram = `https://www.instagram.com/095.762/`;
+  enlaceTiktok = `https://www.tiktok.com/@miriamincruises?lang=es`;
+  enlaceYoutube = `https://www.youtube.com/channel/UChUdAzOrqdGLB57wjJoE9lg`;
+  enlaceFacebook = `https://www.facebook.com/miriam.duran.906`;
 
   ngOnInit() {
     this.items = [

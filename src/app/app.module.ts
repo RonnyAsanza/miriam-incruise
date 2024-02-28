@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { GaleriaAllComponent } from './galeria-all/galeria-all.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MessagesModule } from 'primeng/messages';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { MessagesModule } from 'primeng/messages';
     FormsModule,
     ImageModule,
     AppRoutingModule,
-    MessagesModule
+    MessagesModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
